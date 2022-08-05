@@ -2,7 +2,7 @@
   <div class="backdrop" @click="closeThankYou">
     <div class="modal" :class="{ sale: theme === 'sale' }">
       <Spinner  v-if="showSpinner"/>
-      <h1 class="thanks" v-if="showThankYou">Thank you for your order!</h1>
+      <h1 class="thanks" v-if="showThankYou">Thank you!</h1>
     </div>
   </div>
 </template>
@@ -37,8 +37,8 @@ export default {
 
 <style>
 .modal {
-  width: 400px;
-  padding: 20px;
+  width: 200px;
+  padding: 10px;
   margin: 200px auto;
   background: white;
   border-radius: 10px;
